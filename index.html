@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Larisa Buza | Marketing & Communications Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+  <!-- Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Our CSS file -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 border-b border-[#d8d0c2] bg-[#f5f1e8]/95 backdrop-blur">
+
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+
+        <a href="#top" class="focus-ring rounded-sm">
+          <span class="display-font font-semibold tracking-tight">
+            Larisa Buza
+          </span>
+        </a>
+
+        <button
+          id="menu-toggle"
+          type="button"
+          class="focus-ring rounded-sm p-2 md:hidden"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open navigation menu"
+        >
+          <i data-lucide="menu" width="22" height="22"></i>
+        </button>
+
+        <nav
+          id="site-menu"
+          data-open="false"
+          aria-label="Primary navigation"
+          class="hidden items-center gap-7 font-medium md:flex"
+        >
+          <a class="nav-link focus-ring rounded-sm" href="#work">Work</a>
+          <a class="nav-link focus-ring rounded-sm" href="#about">About</a>
+          <a class="nav-link focus-ring rounded-sm" href="#services">Services</a>
+          <a class="nav-link focus-ring rounded-sm" href="#contact">Contact</a>
+        </nav>
+
+      </div>
+    </header>
+
+
+    <main id="top">
+
+      <!-- HERO -->
+      <section class="border-b border-[#d8d0c2]">
+
+        <div class="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:py-28 lg:grid-cols-12 lg:px-10 lg:py-32">
+
+          <div class="lg:col-span-8">
+
+            <p class="reveal mb-7 font-bold uppercase tracking-[0.2em] text-[#4e6652]">
+              Marketing & Creative Communications
+            </p>
+
+            <h1 class="display-font reveal reveal-delay max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.045em]">
+              Larisa Buza — Multilingual Marketing & Communications Specialist
+            </h1>
+
+            <p class="reveal reveal-delay-2 mt-8 max-w-2xl text-[17px] leading-8 text-[#47564c]">
+              Multilingual Marketing & Communications Specialist with hands-on
+              experience managing end-to-end brand campaigns, large-scale events
+              and digital media strategies. Skilled in brand strategy, creative
+              communications, social media and content development.
+            </p>
+
+          </div>
+
+          <aside class="flex flex-col justify-end lg:col-span-4 lg:pb-2">
+
+            <p class="mb-6 border-l-2 border-[#eaa14d] pl-4 text-sm leading-6 text-[#47564c]">
+              Open to marketing, brand and communications opportunities.
+            </p>
+
+            <a
+              class="focus-ring inline-flex w-fit items-center gap-3 rounded-full bg-[#17231e] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+              href="#work"
+            >
+              Explore my work
+              <i data-lucide="arrow-down-right" width="18" height="18"></i>
+            </a>
+
+          </aside>
+
+        </div>
+      </section>
+
+
+      <!-- SELECTED WORK -->
+      <section id="work" class="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-10">
+
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+
+          <div>
+            <p class="mb-4 font-bold uppercase tracking-[0.2em] text-[#4e6652]">
+              Selected Work
+            </p>
+
+            <h2 class="display-font text-3xl font-semibold tracking-[-0.035em]">
+              Marketing ideas made clear, useful and memorable.
+            </h2>
+          </div>
+
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+        <div class="mb-10 flex flex-wrap gap-3" role="group">
+
+          <button
+            class="filter-button focus-ring rounded-full px-4 py-2 font-semibold"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All work
+          </button>
+
+          <button
+            class="filter-button focus-ring rounded-full px-4 py-2 font-semibold"
+            type="button"
+            data-filter="strategy"
+            aria-pressed="false"
+          >
+            Strategy
+          </button>
+
+          <button
+            class="filter-button focus-ring rounded-full px-4 py-2 font-semibold"
+            type="button"
+            data-filter="communications"
+            aria-pressed="false"
+          >
+            Communications
+          </button>
+
+          <button
+            class="filter-button focus-ring rounded-full px-4 py-2 font-semibold"
+            type="button"
+            data-filter="campaigns"
+            aria-pressed="false"
+          >
+            Campaigns
+          </button>
+
+          <button
+            class="filter-button focus-ring rounded-full px-4 py-2 font-semibold"
+            type="button"
+            data-filter="creative"
+            aria-pressed="false"
+          >
+            Creative
+          </button>
+
+        </div>
+
+
+        <!-- PROJECT GRID -->
+        <div id="project-grid" class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+
+
+          <!-- PROJECT 1 -->
+          <article
+            data-category="strategy"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/7598018/pexels-photo-7598018.jpeg"
+              alt="Brand strategy project"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Strategy
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Castel Mimi Brand Audit
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Brand audit exploring positioning, communication and opportunities
+                for strengthening the brand experience.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 2 -->
+          <article
+            data-category="strategy"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/7598009/pexels-photo-7598009.jpeg"
+              alt="Marketing proposal"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Strategy
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Creative Marketing Proposal
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Strategic campaign proposal combining audience insight, brand
+                direction and creative communication.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 3 -->
+          <article
+            data-category="communications"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/12199409/pexels-photo-12199409.jpeg"
+              alt="Crisis communication project"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Communications
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Crisis Communication Strategic Brief
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Strategic crisis communication framework including stakeholder
+                priorities, messaging and response planning.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 4 -->
+          <article
+            data-category="campaigns"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/7661184/pexels-photo-7661184.jpeg"
+              alt="PR campaign"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Campaigns
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                H&M Integrated PR Campaign
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Integrated PR campaign concept built around communication,
+                audience engagement and brand storytelling.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 5 -->
+          <article
+            data-category="strategy"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/3183174/pexels-photo-3183174.jpeg"
+              alt="International marketing strategy"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Strategy
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                International Marketing Strategy
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                International marketing project focused on market analysis,
+                localisation and strategic market development.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 6 -->
+          <article
+            data-category="strategy"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/7661410/pexels-photo-7661410.jpeg"
+              alt="Brand strategy case study"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Strategy
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Sergiana Brand Strategy Case Study
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Brand strategy case study exploring positioning, audience,
+                identity and strategic development.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 7 -->
+          <article
+            data-category="creative"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/2882555/pexels-photo-2882555.jpeg"
+              alt="Email marketing concept"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Creative
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Pandora Holiday Newsletter
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Email marketing concept developed around seasonal storytelling,
+                visual communication and customer engagement.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 8 -->
+          <article
+            data-category="campaigns"
+            class="project-card overflow-hidden rounded-2xl border border-[#d8d0c2] bg-[#fcfaf5]"
+          >
+
+            <img
+              loading="lazy"
+              class="aspect-[4/3] w-full object-cover"
+              src="https://images.pexels.com/photos/4048095/pexels-photo-4048095.jpeg"
+              alt="NOMA campaign"
+            >
+
+            <div class="p-6">
+
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.17em] text-[#4e6652]">
+                Campaigns
+              </p>
+
+              <h3 class="display-font text-2xl font-semibold">
+                NOMA Brand Campaign Concept
+              </h3>
+
+              <p class="mt-3 leading-7 text-[#47564c]">
+                Integrated brand campaign concept combining social content,
+                community engagement and out-of-home creative.
+              </p>
+
+              <a class="project-link mt-5 inline-flex border-b border-current pb-1 font-semibold" href="#">
+                View project
+              </a>
+
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+      <section id="about" class="border-y border-[#d8d0c2] bg-[#e6ebdf]">
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:py-28 lg:grid-cols-12 lg:px-10">
+
+          <p class="font-bold uppercase tracking-[0.2em] text-[#4e6652] lg:col-span-3">
+            About
+          </p>
+
+          <div class="lg:col-span-8 lg:col-start-5">
+
+            <h2 class="display-font text-3xl font-semibold">
+              Strategy, creativity and communication.
+            </h2>
+
+            <p class="mt-7 max-w-3xl text-lg leading-8 text-[#3f5144]">
+              I work across marketing strategy, brand communication, campaigns
+              and creative content, combining strategic thinking with practical
+              execution.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CAPABILITIES -->
+      <section class="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-10">
+
+        <div class="grid gap-10 lg:grid-cols-12">
+
+          <div class="lg:col-span-4">
+
+            <p class="mb-4 font-bold uppercase tracking-[0.2em] text-[#4e6652]">
+              Capabilities
+            </p>
+
+            <h2 class="display-font text-3xl font-semibold">
+              Strategy, story and rollout.
+            </h2>
+
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:col-span-7 lg:col-start-6">
+
+            <span class="skill-tag">Brand strategy</span>
+            <span class="skill-tag">Marketing strategy</span>
+            <span class="skill-tag">Creative direction</span>
+            <span class="skill-tag">PR & Communications</span>
+            <span class="skill-tag">Social Media</span>
+            <span class="skill-tag">Content Creation</span>
+            <span class="skill-tag">Campaign Planning</span>
+            <span class="skill-tag">Email Marketing</span>
+            <span class="skill-tag">Event Marketing</span>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- SERVICES -->
+      <section id="services" class="border-y border-[#4e6652] bg-[#17231e] text-white">
+
+        <div class="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-10">
+
+          <p class="mb-4 font-bold uppercase tracking-[0.2em] text-[#eaa14d]">
+            What I work on
+          </p>
+
+          <h2 class="display-font max-w-2xl text-3xl font-semibold">
+            From strategy to creative execution.
+          </h2>
+
+          <div class="mt-12 grid gap-px overflow-hidden rounded-2xl border border-[#4e6652] bg-[#4e6652] md:grid-cols-3">
+
+            <article class="service-card bg-[#17231e] p-8">
+
+              <span class="mb-12 block text-sm text-[#eaa14d]">
+                01
+              </span>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Brand & Marketing Strategy
+              </h3>
+
+              <p class="mt-4 leading-7 text-[#c9d2c3]">
+                Brand audits, positioning, audience insights and marketing strategy.
+              </p>
+
+            </article>
+
+
+            <article class="service-card bg-[#17231e] p-8">
+
+              <span class="mb-12 block text-sm text-[#eaa14d]">
+                02
+              </span>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Communications & PR
+              </h3>
+
+              <p class="mt-4 leading-7 text-[#c9d2c3]">
+                PR planning, communication strategy, crisis communications and editorial content.
+              </p>
+
+            </article>
+
+
+            <article class="service-card bg-[#17231e] p-8">
+
+              <span class="mb-12 block text-sm text-[#eaa14d]">
+                03
+              </span>
+
+              <h3 class="display-font text-2xl font-semibold">
+                Campaigns & Creative
+              </h3>
+
+              <p class="mt-4 leading-7 text-[#c9d2c3]">
+                Campaign concepts, social media, content creation and creative direction.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="mx-auto max-w-7xl px-6 py-24 md:py-32 lg:px-10">
+
+        <div class="max-w-4xl">
+
+          <p class="mb-5 font-bold uppercase tracking-[0.2em] text-[#4e6652]">
+            Contact
+          </p>
+
+          <h2 class="display-font text-5xl font-semibold leading-[1.04]">
+            Let's create something memorable.
+          </h2>
+
+          <p class="mt-7 max-w-xl text-lg leading-8 text-[#47564c]">
+            Interested in working together or learning more about my projects?
+            Feel free to get in touch.
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t border-[#d8d0c2] px-6 py-7 lg:px-10">
+
+      <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-sm text-[#47564c] sm:flex-row">
+
+        <p>
+          © 2026 Larisa Buza. Marketing & Communications Portfolio.
+        </p>
+
+        <a href="#top" class="font-medium text-[#17231e]">
+          Back to top ↑
+        </a>
+
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- Our JavaScript -->
+  <script src="./script.js"></script>
+
+</body>
+</html>

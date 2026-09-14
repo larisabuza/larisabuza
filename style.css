@@ -30,6 +30,7 @@ a {
 .page-shell {
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 /* NAVIGATION */
@@ -184,11 +185,7 @@ a {
   }
 }
 
-/* Subtle decorative background lines */
-
-.page-shell {
-  position: relative;
-}
+/* SUBTLE DECORATIVE BACKGROUND LINES */
 
 .site-decoration {
   position: absolute;
@@ -231,21 +228,7 @@ a {
   transform: rotate(-6deg);
 }
 
-/* Small decorative line near name in navigation */
-
-.brand-shadow-line {
-  position: absolute;
-  left: 38px;
-  top: 48px;
-  width: 78px;
-  height: 14px;
-  border-bottom: 1.5px solid rgba(78, 102, 82, 0.28);
-  border-radius: 50%;
-  transform: rotate(-3deg);
-  pointer-events: none;
-}
-
-/* Keep real content above decorations */
+/* KEEP CONTENT ABOVE DECORATIONS */
 
 header,
 main,
@@ -253,6 +236,8 @@ footer {
   position: relative;
   z-index: 1;
 }
+
+/* DECORATIONS ON MOBILE */
 
 @media (max-width: 767px) {
   .site-decoration-two {
@@ -262,11 +247,6 @@ footer {
   .site-decoration-one,
   .site-decoration-three {
     opacity: 0.65;
-  }
-
-  .brand-shadow-line {
-    width: 62px;
-    left: 28px;
   }
 }
 
